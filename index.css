@@ -1,5 +1,24 @@
+html {
+    font-size: 14px;
+}
+hr {
+    margin: 50px 0;
+}
+.inputButton {
+    background-color: buttonface;
+    border-width: 1px;
+    border-color: buttonborder;
+    border-style: outset;
+    padding-inline: 6px;
+    border-image: initial;
+    padding: 5px 20px;
+    border-radius: 12px;
+}
+.saveButton {
+    margin-left: 30px;
+}
 .inputDiv {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 .inputLabel {
     padding-right: 5px;
@@ -14,27 +33,18 @@
 .explanation {
     margin-bottom: 30px;
 }
+.space {
+    margin: 0 30px;
+}
 #reset {
-    margin: 10px 0;
+    margin: 15px 0;
 }
-#merge {
-    margin: 10px 0;
+#merged {
+    margin-top: 50px;
 }
-#popupWrapper {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
+#warning {
+    color: red;
 }
-#popupInner {
-    width: 100%;
-    max-width: 300px;
-    background: white;
-    top: 40%;
-    left: 50px;
-    padding: 10px;
-    position: relative;
+#canvas3 {
+    margin-top: 30px;
 }
