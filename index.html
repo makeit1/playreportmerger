@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="explanation">
+            <p id="explanation1"></p>
+            <div>
+                <image class="example" src="images/report1.png"></image>
+                <span class="example" >+</span>
+                <image class="example" src="images/report2.png"></image>
+                <span class="example" >=&gt;</span>
+                <image class="example" src="images/merged.png"></image>
+            </div>
+            <p id="explanation2"></p>
+            <p id="explanation3"></p>
+            <p id="explanation4"></p>
+            <p id="explanation5"></p>
+            <p id="explanation6"></p>
+        </div>
+        <div class="inputDiv">
+            <label id="input1" class="inputLabel"></label><input type="file" id="inputFile1" accept=".png,.jpg,.jpeg">
+        </div>
+        <div class="inputDiv">
+            <label id="input2" class="inputLabel"></label><input type="file" id="inputFile2" accept=".png,.jpg,.jpeg">
+        </div>
+        <div id="reset">
+            <button id="resetButton"></button>
+        </div>
+        <div id="merge">
+            <button id="mergeButton"></button>
+        </div>
+        <div id="screenshotPlaceholder">
+            <p id="screenshotPlaceholderDescription"></p>
+            <p id="screenshotPlaceholderDescription2"></p>
+        </div>
+        <div id="screenshots">
+            <div id="image1" class="imageDiv" style="display:none">
+                <p id="screenshotLabel1"></p>
+                <canvas id="canvas1" width="0" height="0"></canvas>
+            </div>
+            <div id="image2" class="imageDiv" style="display:none">
+                <p id="screenshotLabel2"></p>
+                <canvas id="canvas2" width="0" height="0"></canvas>
+            </div>
+        </div>
+        <div id="trimmedImages">
+            <div id="trimmedImage1" class="imageDiv" style="display:none">
+                <p id="trimmedImageLabel1"></p>
+                <canvas id="canvas1_trimmed" width="0" height="0"></canvas>
+            </div>
+            <div id="trimmedImage2" class="imageDiv" style="display:none">
+                <p id="trimmedImageLabel2"></p>
+                <canvas id="canvas2_trimmed" width="0" height="0"></canvas>
+            </div>
+         </div>
+        <div id="merged" style="display:none">
+            <p id="mergedImageLabel"></p>
+            <canvas id="canvas3" width="0" height="0"></canvas>
+        </div>
+        <div id="popupWrapper">
+            <div id="popupInner">
+                <p id="popupMessage"></p>
+                <button id="popupCloseButton"></button>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.min.js"></script>
+    </body>
+</html>
