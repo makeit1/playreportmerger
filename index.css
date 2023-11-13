@@ -4,6 +4,9 @@ html {
 hr {
     margin: 50px 0;
 }
+.saveNote {
+    padding-top: 20px;
+}
 .inputButton {
     background-color: buttonface;
     border-width: 1px;
