@@ -1,5 +1,8 @@
-html {
-    font-size: 14px;
+body {
+    padding: 10px;
+    font-size: 1em;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 hr {
     margin: 50px 0;
@@ -38,6 +41,9 @@ hr {
 }
 .space {
     margin: 0 30px;
+}
+div#merged > img {
+    width: 100%;
 }
 #reset {
     margin: 15px 0;
