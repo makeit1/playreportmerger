@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=500">
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css?v=1.0">
         <title>リンクラ プレイレポート結合</title>
     </head>
     <body>
@@ -20,9 +20,10 @@
         <p id="explanation4">スクリーンショット1にはカード部分の最上部が、スクリーンショット2にはカード部分の最下部が表示されている画像をそれぞれ指定してください。逆に指定すると正しく結合されません。</p>
         <p id="explanation5">編集していないスクリーンショットを使用してください。トリミング等の編集を行った画像では正しく処理できない場合があります。</p>
         <p id="explanation6">「LIVE CLEAR!」と表示され、背景やスコアが完全に表示された後でプレイレポートを表示し、両方のスクリーンショットを撮ってください。背景が異なると差分を正しく抽出できません。</p>
-        <p id="explanation7">免責事項：いかなる場合も、本ツールの利用に起因もしくは関連して発生した間接的、偶発的、結果的損害に対して一切の責任と義務を負いません。</p>
-        <p id="explanation8">動作確認済みブラウザ：iPhone 12/iOS 16/Sarafi, Xperia 5 II/Android 12/Chrome</p>
-        <p id="version">version: 0.6</p>
+        <p id="explanation7">既知の問題：iOS/Chromeで画像保存ボタンが効きません。画像長押しで保存してください。</p>
+        <p id="disclaimer">免責事項：いかなる場合も、本ツールの利用に起因もしくは関連して発生した間接的、偶発的、結果的損害に対して一切の責任と義務を負いません。</p>
+        <p id="version">version: 1.0</p>
+        <p id="tested_browsers"><a href="tested_browsers.html">動作確認済みブラウザ</a></p>
         <hr>
         <div class="inputDiv">
             <span id="inputLabel1" class="inputLabel">スクリーンショット 1：</span>
@@ -46,7 +47,7 @@
         </div>
         <div id="screenshotPlaceholder">
             <p id="screenshotPlaceholderDescription">選択したスクリーンショットと、抽出したプレイレポート部分がここに表示されます。</p>
-            <p id="screenshotPlaceholderDescription2">結合ボタンを押すと、プレイレポートを結合した画像が原寸大で最下部に表示されます。</p>
+            <p id="screenshotPlaceholderDescription2">結合ボタンを押すと、プレイレポートを結合した画像が最下部に表示されます。</p>
         </div>
         <div id="screenshots">
             <p id="screenshotLabel" style="display:none">スクリーンショット</p>
@@ -66,6 +67,6 @@
             <div id="saveNote" class="saveNote">「画像を保存」ボタンが効かない場合は画像を右クリックまたは長押しして保存してください。</div>
             <p></p>
         </div>
-        <script type="text/javascript" src="index.min.js?v=0.6"></script>
+        <script type="text/javascript" src="index.min.js?v=1.0"></script>
     </body>
 </html>

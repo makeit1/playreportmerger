@@ -19,6 +19,7 @@ hr {
     border-image: initial;
     padding: 5px 20px;
     border-radius: 12px;
+    user-select: none;
 }
 .saveButton {
     margin-left: 30px;
@@ -36,17 +37,11 @@ hr {
 .example {
     vertical-align: middle;
 }
-.explanation {
-    margin-bottom: 30px;
-}
 .space {
     margin: 0 30px;
 }
 div#merged > img {
     width: 100%;
-}
-#reset {
-    margin: 15px 0;
 }
 #merged {
     margin-top: 50px;
