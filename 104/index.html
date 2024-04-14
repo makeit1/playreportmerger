@@ -3,28 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=500">
-        <link rel="stylesheet" type="text/css" href="index.css?v=1.0">
+        <link rel="stylesheet" type="text/css" href="../index.css?v=1.0">
         <title>リンクラ プレイレポート結合</title>
     </head>
     <body>
-        <p id="link_to_104">画像3枚版（9人編成）は <a href="104/index.html">こちら</a></p>
-        <p id="explanation1">リンクラのプレイレポート画像2枚を結合します。<br>例：</p>
-        <div>
-            <image class="example" src="images/report1.png"></image>
-            <span id="plus" class="example">&nbsp;+&nbsp;</span>
-            <image class="example" src="images/report2.png">&nbsp;=&gt;&nbsp;</image>
-            <span id="arrow" class="example"></span>
-            <image class="example" src="images/merged.png"></image>
-        </div>
-        <p id="explanation2">画像ファイルはどこにもアップロードされません。ファイルの結合はご使用の端末上で実行されます。</p>
-        <p id="explanation3">処理時間は端末の性能や使用状況により異なります。解像度の高い端末のスクリーンショットは画像サイズが大きくなるため、処理に時間がかかる場合があります。また、バッテリー消費も大きくなります。</p>
-        <p id="explanation4">スクリーンショット1にはカード部分の最上部が、スクリーンショット2にはカード部分の最下部が表示されている画像をそれぞれ指定してください。逆に指定すると正しく結合されません。</p>
-        <p id="explanation5">編集していないスクリーンショットを使用してください。トリミング等の編集を行った画像では正しく処理できない場合があります。</p>
-        <p id="explanation6">「LIVE CLEAR!」と表示され、背景やスコアが完全に表示された後でプレイレポートを表示し、両方のスクリーンショットを撮ってください。背景が異なると差分を正しく抽出できません。</p>
-        <p id="explanation7">既知の問題：iOS/Chromeで画像保存ボタンが効きません。画像長押しで保存してください。</p>
+        <p id="link_to_103">画像2枚版（6人編成）は <a href="../index.html">こちら</a></p>
+        <p id="explanation1">リンクラのプレイレポート画像3枚（9人編成）を結合します。</p>
+        <p id="explanation2">スクリーンショット1にはカード部分の最上部が、スクリーンショット2には2年生の表示全体が、スクリーンショット3にはカード部分の最下部が表示されている画像をそれぞれ指定してください。
+        <br>2枚目は、1年生と下部と3年生の上部が含まれていると正しく結合できる確率が上がります。</p>
+        <p id="explanation3">編集していないスクリーンショットを使用してください。トリミング等の編集を行った画像では正しく処理できない場合があります。</p>
         <p id="disclaimer">免責事項：いかなる場合も、本ツールの利用に起因もしくは関連して発生した間接的、偶発的、結果的損害に対して一切の責任と義務を負いません。</p>
         <p id="version">version: 1.0</p>
-        <p id="tested_browsers"><a href="tested_browsers.html?rev=1.0">動作確認済みブラウザ</a></p>
         <hr>
         <div class="inputDiv">
             <span id="inputLabel1" class="inputLabel">スクリーンショット 1：</span>
@@ -35,6 +24,11 @@
             <span id="inputLabel2" class="inputLabel">スクリーンショット 2：</span>
             <span id="inputButton2" class="inputButton">ファイルを選択</span>
             <input type="file" id="inputFile2" accept=".png,.jpg,.jpeg" style="display:none">
+        </div>
+        <div class="inputDiv">
+            <span id="inputLabel3" class="inputLabel">スクリーンショット 3：</span>
+            <span id="inputButton3" class="inputButton">ファイルを選択</span>
+            <input type="file" id="inputFile3" accept=".png,.jpg,.jpeg" style="display:none">
         </div>
         <div id="action">
             <span id="resetButton" class="inputButton">リセット</span>
@@ -54,6 +48,7 @@
             <p id="screenshotLabel" style="display:none">スクリーンショット</p>
             <div id="image1" class="imageDiv" style="display:none"></div>
             <div id="image2" class="imageDiv" style="display:none"></div>
+            <div id="image3" class="imageDiv" style="display:none"></div>
         </div>
         <div id="playReports">
             <p id="playReportLabel" style="display:none">プレイレポート</p>
@@ -61,7 +56,9 @@
             </div>
             <div id="playReport2" class="imageDiv" style="display:none">
             </div>
-         </div>
+            <div id="playReport3" class="imageDiv" style="display:none">
+            </div>
+        </div>
         <div id="merged" style="display:none">
             <span id="mergedImageLabel">結合後の画像</span>
             <span id="saveButton" class="inputButton saveButton">画像を保存</span>
