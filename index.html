@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=500">
-        <link rel="stylesheet" type="text/css" href="index.css?v=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css?v=1.2">
         <title>リンクラ プレイレポート結合</title>
     </head>
     <body>
@@ -23,7 +23,7 @@
         <p id="explanation6">「LIVE CLEAR!」と表示され、背景やスコアが完全に表示された後でプレイレポートを表示し、両方のスクリーンショットを撮ってください。背景が異なると差分を正しく抽出できません。</p>
         <p id="explanation7">既知の問題：iOS/Chromeで画像保存ボタンが効きません。画像長押しで保存してください。</p>
         <p id="disclaimer">免責事項：いかなる場合も、本ツールの利用に起因もしくは関連して発生した間接的、偶発的、結果的損害に対して一切の責任と義務を負いません。</p>
-        <p id="version">version: 1.0</p>
+        <p id="version">version: 1.2 (<a href="history.html?v=1.2">更新履歴</a>)</p>
         <p id="tested_browsers"><a href="tested_browsers.html?rev=1.0">動作確認済みブラウザ</a></p>
         <hr>
         <div class="inputDiv">
@@ -35,6 +35,10 @@
             <span id="inputLabel2" class="inputLabel">スクリーンショット 2：</span>
             <span id="inputButton2" class="inputButton">ファイルを選択</span>
             <input type="file" id="inputFile2" accept=".png,.jpg,.jpeg" style="display:none">
+        </div>
+        <div class="inputDiv">
+            <span id="checkboxLabel1" class="inputLabel">出力画像サイズ制限なし：</span>
+            <input type="checkbox" id="checkbox1" checked>
         </div>
         <div id="action">
             <span id="resetButton" class="inputButton">リセット</span>
@@ -68,6 +72,6 @@
             <div id="saveNote" class="saveNote">「画像を保存」ボタンが効かない場合は画像を右クリックまたは長押しして保存してください。</div>
             <p></p>
         </div>
-        <script type="text/javascript" src="index.min.js?v=1.0"></script>
+        <script type="text/javascript" src="index.min.js?v=1.2"></script>
     </body>
 </html>

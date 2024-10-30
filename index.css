@@ -21,6 +21,12 @@ hr {
     border-radius: 12px;
     user-select: none;
 }
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    vertical-align: middle;
+}
 .saveButton {
     margin-left: 30px;
 }
